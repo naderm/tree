@@ -754,9 +754,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      (0, _objectAssign2.default)(cloneProps, this.treeNodesStates[pos].siblingPosition);
 	    }
 	
-	    var element = _react2.default.cloneElement(child, cloneProps);
-	
-	    return element;
+	    return _react2.default.cloneElement(child, cloneProps);
 	  };
 	
 	  Tree.prototype.render = function render() {
@@ -1460,8 +1458,8 @@ return /******/ (function(modules) { // webpackBootstrap
 	    _this.state = {
 	      dataLoading: false,
 	      dragNodeHighlight: false,
-	      selected: false,
-	      expanded: false
+	      selected: props.selected,
+	      expanded: props.expanded
 	    };
 	    return _this;
 	  }
